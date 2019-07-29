@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OOPS Concept With POM Automation Test Suite" thread-count="2" parallel="tests" verbose="3">
+    
+  <test name="OOPS Concept With POM TestCases on Chrome" parallel="methods" thread-count="3">
+    <parameter name="browser" value="chrome"/>  
+    <classes>
+       <class name="com.qa.oops.tests.LoginPageTest"/>
+    </classes>
+  </test>
+  
+  
+  <test name="OOPS Concept With POM TestCases on FF" parallel="methods" thread-count="3">
+    <parameter name="browser" value="FF"/>  
+    <classes>
+       <class name="com.qa.oops.tests.LoginPageTest"/>
+    </classes>
+  </test>
+</suite>

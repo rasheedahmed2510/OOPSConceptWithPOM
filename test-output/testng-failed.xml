@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [OOPS Concept With POM Automation Test Suite]" parallel="tests">
+  <test thread-count="2" verbose="3" name="OOPS Concept With POM TestCases on FF(failed)" parallel="methods">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.qa.oops.tests.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="doLoginTest"/>
+          <include name="verifyPageTitle"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginPageHeaderTest"/>
+        </methods>
+      </class> <!-- com.qa.oops.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- OOPS Concept With POM TestCases on FF(failed) -->
+  <test thread-count="2" verbose="3" name="OOPS Concept With POM TestCases on Chrome(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.oops.tests.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="doLoginTest"/>
+          <include name="verifyPageTitle"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginPageHeaderTest"/>
+        </methods>
+      </class> <!-- com.qa.oops.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- OOPS Concept With POM TestCases on Chrome(failed) -->
+</suite> <!-- Failed suite [OOPS Concept With POM Automation Test Suite] -->
